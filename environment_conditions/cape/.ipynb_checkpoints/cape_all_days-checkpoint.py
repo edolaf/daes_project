@@ -3,14 +3,12 @@ import xarray as xr
 import os
 
 # File paths
-extreme_events_path = "/scratch/k10/ef7927/research_project/csv/all_stations/extreme_events.csv"
-location_path = "/scratch/k10/ef7927/research_project/csv/all_stations/station_coordinate.csv"
+location_path = "/scratch/k10/ef7927/research_project/csv/all_stations/stations_coordinate.csv"
 output_file = "/scratch/k10/ef7927/research_project/netcdf/cape_all_days.nc"
 base_dir = "/g/data/rt52/era5/single-levels/reanalysis/cape/"
 
 
 # Read CSV files
-extreme_events_df = pd.read_csv(extreme_events_path)
 location_df = pd.read_csv(location_path)
 
 # Clean column names
